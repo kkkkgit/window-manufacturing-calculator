@@ -152,10 +152,10 @@ Glass Strips:
    ```
 
 ## Group Members
-1. **John Doe** - Lead Developer
-2. **Jane Smith** - UI/UX Designer
-3. **Alice Johnson** - QA Engineer
-4. **Bob Brown** - Documentation Specialist
+1. Juss Arus
+2. Kristjan Noormets
+3. Lisanna H6bem2gi
+4. Getter Aust
 
 ## Support
 For any issues or questions, please refer to the documentation or contact support.
