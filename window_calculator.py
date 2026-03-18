@@ -244,6 +244,17 @@ def format_output(result: Dict[str, Any]) -> str:
         else:
             output.append(f"  {key}: {strip if strip is not None else 'N/A'}")
     
+    # Customizations applied by AI agent
+    if result.get("customization_request"):
+        output.append("-" * 50)
+        output.append(f"Kliendi erisoov: {result['customization_request']}")
+        if result.get("customizations_applied"):
+            output.append("Rakendatud muutused:")
+            for item in result["customizations_applied"]:
+                output.append(f"  • {item}")
+        if result.get("customization_explanation"):
+            output.append(f"Selgitus: {result['customization_explanation']}")
+
     output.append("=" * 50)
     return "\n".join(output)
 
